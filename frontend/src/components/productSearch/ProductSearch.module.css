@@ -1,0 +1,151 @@
+/* ProductSearch.module.css */
+.productSearch {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Enhanced Styling for Title */
+.productSearch .title {
+  font-size: 2.5rem; /* Larger font size for prominence */
+  font-weight: 700;  /* Bold font weight for strong emphasis */
+  color: #333;      /* A dark color for contrast */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);  /* Soft text shadow for depth */
+  margin-top: 30px;  /* Adjust top margin */
+  margin-bottom: 40px;  /* Add more space at the bottom */
+  text-align: center;  /* Center align the title */
+  font-family: 'Helvetica Neue', Arial, sans-serif;  /* Modern sans-serif font */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .productSearch .title {
+    font-size: 2rem;  /* Slightly smaller font size for smaller screens */
+  }
+}
+
+.productSearch .imageField {
+  /* width: 100%; */
+  /* height: auto; */
+  margin-bottom: 20px;
+}
+
+.productSearch .form-section {
+  margin-bottom: 20px;
+}
+
+.productSearch .summarySection {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 28px;
+}
+
+.productSearch .itemCard {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.productSearch .itemTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.productSearch .itemPrice {
+  font-size: 16px;
+  color: green;
+}
+
+.productSearch .timeToSale, .productSearch .reference-price {
+  font-size: 14px;
+  color: #666;
+}
+
+.productSearch .viewItem {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.productSearch .viewItem:hover {
+  background-color: #0056b3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-top: 8px solid #ffffff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.summaryTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.summaryTable th,
+.summaryTable td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.summaryTable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.summaryTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+.summaryTable tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White for odd rows */
+}
+
+.summaryTable tbody tr:hover {
+  background-color: #f1f1f1; /* Slight hover effect */
+}
+
+.noData {
+  color: #888;
+  font-style: italic;
+}
+
+.tooltips {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+

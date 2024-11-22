@@ -1,0 +1,120 @@
+.terapeak-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.agg-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.agg-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.agg-item {
+  background-color: #f4f7fc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agg-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.agg-item p {
+  font-size: 1rem;
+  color: #777;
+}
+
+
+/* Media Query for larger screens (1200px and above) */
+@media (min-width: 1200px) {
+  .agg-item {
+    flex-basis: 30%;  /* Each item takes 30% of the container width */
+    max-width: 30%;
+  }
+}
+
+/* Media Query for medium screens (between 768px and 1200px) */
+@media (max-width: 1200px) and (min-width: 768px) {
+  .agg-item {
+    flex-basis: 48%;  /* Each item takes 48% of the container width */
+    max-width: 48%;
+  }
+}
+
+/* Media Query for small screens (768px and below) */
+@media (max-width: 768px) {
+  .agg-item {
+    flex-basis: 100%;  /* Each item takes full width of the container */
+    max-width: 100%;
+  }
+}
+
+.items-section h2 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.item-card {
+  /* display: flex;
+  align-items: center; */
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.item-card img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.item-card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.item-details h4 {
+  font-size: 18px;
+  color: #222;
+}
+
+.item-details p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.item-details a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.item-details a:hover {
+  text-decoration: underline;
+}
